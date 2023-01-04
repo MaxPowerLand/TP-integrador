@@ -67,7 +67,7 @@
 						<hr>
 
 						<a href="/products/edit/<%= producto.id %> " class="action-button edit">EDITAR PRODUCTO</a>
-						<form action="/products/delete/¿¿" method="POST" style="display: inline-flex">
+						<form action="/products/delete/<%= producto._id %>" method="POST" style="display: inline-flex" enctype="multipart/form-data">
 							<button type="submit" class="action-button delete">ELIMINAR</button>
 						</form>
 					</article>
